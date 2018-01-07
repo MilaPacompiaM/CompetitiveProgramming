@@ -23,7 +23,6 @@ public class Uva00101 {
 			s.pop();
 		}
 		s.push(a);
-		//System.out.println(ert++ + " 1");
 	}
 	public static void oper2(int a, int b) {
 		int sna = pos[a];
@@ -38,7 +37,6 @@ public class Uva00101 {
 		if (aux == a) s.pop();
 		s = list[snb];
 		s.push(a);
-		//System.out.println(ert++ + " 2");
 	}
 	public static void oper3(int a, int b) {
 		int sna = pos[a];
@@ -65,7 +63,6 @@ public class Uva00101 {
 			pos[(int)temp.peek()] = snb;
 			temp.pop();
 		}
-		//System.out.println(ert++ + " 3");
 	}
 	public static void oper4(int a, int b) {
 		int sna = pos[a];
@@ -103,7 +100,6 @@ public class Uva00101 {
 		String[] lit;
 		while( !"quit".equals(line = sc.nextLine()) ) {
 			lit = line.split("[ ]+");
-			//System.out.println(line);
 			a = Integer.parseInt(lit[1]);
 			b = Integer.parseInt(lit[3]);
 			if(a == b || pos[a] == pos[b]) continue;
@@ -125,7 +121,6 @@ public class Uva00101 {
 			Stack other = new Stack<>();
 			while(!asd.isEmpty()) {
 				other.push(asd.peek());
-//				System.out.printf(" %d", (int)asd.peek());
 				asd.pop();
 			}
 			while(!other.isEmpty()) {
