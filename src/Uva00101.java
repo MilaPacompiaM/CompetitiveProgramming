@@ -103,7 +103,7 @@ public class Uva00101 {
 		String[] lit;
 		while( !"quit".equals(line = sc.nextLine()) ) {
 			lit = line.split("[ ]+");
-			System.out.println(line);
+			//System.out.println(line);
 			a = Integer.parseInt(lit[1]);
 			b = Integer.parseInt(lit[3]);
 			if(a == b || pos[a] == pos[b]) continue;
